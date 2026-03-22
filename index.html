@@ -3,151 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Endogenesis | Rehabilitación y Paneles Solares</title>
-    <style>
-       
-        :root {
-            --verde-principal: #2d6a4f;
-            --verde-oscuro: #1b4332;
-            --crema: #fbf8f1;
-            --gris-texto: #4a4a4a;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--crema);
-            color: var(--gris-texto);
-
-
-        }
-
-        
-        .hero {
-            
-            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://qiarg.org/wp-content/uploads/2020/06/arq-sustentable.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-            padding: 0 20px;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 10px;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin-bottom: 30px;
-        }
-
-        .btn {
-            background-color: var(--verde-principal);
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            font-size: 1.1rem;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: var(--verde-oscuro);
-        }
-
-        
-        .servicios {
-            padding: 80px 20px;
-            text-align: center;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .servicios h2 {
-            font-size: 2.5rem;
-            color: var(--verde-oscuro);
-            margin-bottom: 50px;
-        }
-
-        .grid-servicios {
-            display: flex;
-            gap: 30px;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .tarjeta {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            flex: 1;
-            min-width: 250px;
-            max-width: 350px;
-            text-align: left;
-        }
-
-        .tarjeta h3 {
-            color: var(--verde-principal);
-            margin-top: 0;
-        }
-
-        
-        footer {
-            background-color: var(--verde-oscuro);
-            color: white;
-            text-align: center;
-            padding: 30px 20px;
-            margin-top: 40px;
-        }
-    </style>
+    <title>Endogenesis | Futuro Sustentable</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
+    <nav class="navbar">
+        <div class="logo">Endogenesis</div>
+        <ul class="nav-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
     <header class="hero">
-        <h1>Tu hogar, en armonía con el mañana</h1>
-        <p>Transformamos espacios convencionales en refugios sustentables. Energía limpia, eficiencia real y el confort que mereces para tu familia.</p>
-        <a href="#contacto" class="btn">Solicitar Diagnóstico Gratuito</a>
-        <a href="https://www.ohchr.org/es/special-procedures/sr-housing/human-right-adequate-housing" target="_blank" style="display: inline-block; background-color: #2d6a4f; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 15px; text-align: center;">
-    Conoce más sobre sustentabilidad
-        </a>
+        <div class="hero-content">
+            <h1>Tu hogar, en armonía con el mañana</h1>
+            <p>Transformamos espacios en refugios sustentables con energía limpia y eficiencia real.</p>
+            <div class="hero-btns">
+                <a href="#contacto" class="btn">Diagnóstico Gratuito</a>
+            </div>
+        </div>
     </header>
 
-    <section class="servicios">
-        <h2>¿Cómo podemos mejorar tu hogar?</h2>
+    <section id="servicios" class="servicios">
+        <h2>Nuestras Soluciones Verdes</h2>
         <div class="grid-servicios">
-            
             <div class="tarjeta">
+                <i class="fas fa-solar-panel"></i>
                 <h3>Paneles Solares</h3>
-                <p>Instalación de sistemas fotovoltaicos a medida. Genera tu propia energía y reduce drásticamente tu factura de luz desde el primer mes.</p>
+                <p>Genera tu propia energía y reduce tu factura de luz desde el primer mes.</p>
             </div>
-
             <div class="tarjeta">
-                <h3>Rehabilitación Energética</h3>
-                <p>Mejoramos el aislamiento térmico de tus paredes y ventanas para que tu casa se mantenga fresca en verano y cálida en invierno sin gastar de más.</p>
+                <i class="fas fa-home"></i>
+                <h3>Rehabilitación</h3>
+                <p>Aislamiento térmico para mantener tu casa fresca en verano y cálida en invierno.</p>
             </div>
-
             <div class="tarjeta">
-                <h3>Captación de Agua</h3>
-                <p>Sistemas de recolección de agua de lluvia y filtros purificadores para aprovechar al máximo los recursos naturales en tu día a día.</p>
+                <i class="fas fa-tint"></i>
+                <h3>Agua de Lluvia</h3>
+                <p>Sistemas de captación y filtrado para aprovechar cada gota de la naturaleza.</p>
             </div>
-
         </div>
     </section>
 
+    <a href="https://wa.me/tu-numero" class="btn-flotante" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
     <footer id="contacto">
-        <h2>Empieza tu proyecto verde hoy</h2>
-        <p>Contáctanos en: correo por asignar | Tel: telefono por asignar</p>
+        <div class="footer-content">
+            <p>© 2026 Endogenesis - Estrategias de Rehabilitación Sustentable</p>
+            <p>Toluca, Estado de México</p>
+        </div>
     </footer>
 
 </body>
